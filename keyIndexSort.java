@@ -1,7 +1,7 @@
 package Strings;
 /**
  * 键索引排序法
- * 用于小整数键的排序
+ * 用于小整数键的排序,小于实数R，整数级别
  * @author Administrator
  *
  */
@@ -9,7 +9,7 @@ public class keyIndexSort {
 		public void sort(Student[] a,int R){
 			int N = a.length;
 			Student[] aux = new Student[N];
-			int[] count = new int[R+1];
+			int[] count = new int[R+1];//计算频率
 			
 			//计算出现的概率
 			for(int i=0;i<N;i++){
